@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>دكتور محمد حسين حسن | استشاري الأمراض الجلدية والتجميل والليزر</title>
+  
+  <!-- Fonts: Tajawal & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            medblue: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              300: '#93c5fd',
+              400: '#60a5fa',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+              950: '#0f172a',
+            },
+            royal: {
+              50: '#f4f7fb',
+              500: '#1351d8',
+              600: '#0a3ebd',
+              700: '#08329b',
+            },
+            tealsoft: {
+              50: '#f0fdfa',
+              500: '#14b8a6',
+              600: '#0d9488',
+            }
+          },
+          fontFamily: {
+            tajawal: ['Tajawal', 'sans-serif'],
+            sans: ['Tajawal', 'sans-serif'],
+            en: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          boxShadow: {
+            'soft-card': '0 10px 30px -5px rgba(29, 78, 216, 0.06), 0 4px 12px -2px rgba(0, 0, 0, 0.03)',
+            'elevated': '0 20px 40px -12px rgba(19, 81, 216, 0.12), 0 8px 16px -4px rgba(0, 0, 0, 0.04)',
+            'branch-active': '0 12px 30px -8px rgba(37, 99, 235, 0.28)',
+            'float-btn': '0 8px 24px rgba(16, 185, 129, 0.35)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Tajawal', sans-serif;
+      background-color: #fcfdfe;
+      color: #1e293b;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Subdued Clinical Ambient Lights */
+    .clinical-blob {
+      position: absolute;
+      border-radius: 9999px;
+      filter: blur(80px);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.55;
+    }
+
+    /* Subtle Pattern Background */
+    .bg-medical-grid {
+      background-size: 32px 32px;
+      background-image: 
+        linear-gradient(to right, rgba(37, 99, 235, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(37, 99, 235, 0.03) 1px, transparent 1px);
+    }
+
+    /* Smooth Slider for Before/After */
+    .before-after-box {
+      position: relative;
+      overflow: hidden;
+      user-select: none;
+      border-radius: 1.5rem;
+    }
+    .slider-divider-line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: #ffffff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.35);
+      transform: translateX(-50%);
+      cursor: ew-resize;
+      z-index: 25;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+  </style>
+</head>
+<body class="bg-medical-grid antialiased relative selection:bg-medblue-600 selection:text-white">
+
+  <!-- Ambient Light Orbs (Soft Clinical Touch) -->
+  <div class="clinical-blob w-96 h-96 bg-blue-100 top-12 right-0"></div>
+  <div class="clinical-blob w-[36rem] h-[36rem] bg-sky-100/60 top-1/4 -left-20"></div>
+  <div class="clinical-blob w-96 h-96 bg-emerald-50 bottom-1/3 right-1/4"></div>
+
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/80 shadow-xs transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand & Doctor Identity -->
+      <a href="#" class="flex items-center gap-3.5 group">
+        <div class="relative w-12 h-12 rounded-2xl bg-gradient-to-tr from-medblue-700 via-medblue-600 to-sky-500 p-[2px] shadow-md shadow-medblue-600/15 group-hover:scale-105 transition-all duration-300">
+          <div class="w-full h-full bg-white rounded-[14px] flex items-center justify-center">
+            <span class="font-extrabold text-medblue-700 text-lg tracking-wider font-en">MH</span>
+          </div>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="font-bold text-slate-900 text-base md:text-lg leading-tight group-hover:text-medblue-700 transition-colors">
+              دكتور محمد حسين حسن
+            </h1>
+            <span class="hidden sm:inline-flex items-center gap-1 px-2 py-0.5 text-[11px] bg-blue-50 text-medblue-700 border border-blue-200/80 rounded-full font-bold">
+              <i class="fa-solid fa-circle-check text-emerald-500 text-[9px]"></i> استشاري معتمد
+            </span>
+          </div>
+          <p class="text-xs text-slate-500 font-medium mt-0.5">
+            الأمراض الجلدية والتناسلية • التجميل والليزر • جراحات الجلد
+          </p>
+        </div>
+      </a>
+
+      <!-- Quick Nav Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-600">
+        <a href="#about" class="hover:text-medblue-600 transition-colors">عن الطبيب</a>
+        <a href="#services" class="hover:text-medblue-600 transition-colors">الخدمات الطبية</a>
+        <a href="#branches" class="hover:text-medblue-600 transition-colors">الفروع والمواعيد</a>
+        <a href="#before-after" class="hover:text-medblue-600 transition-colors">نتائج الحالات</a>
+        <a href="#reviews" class="hover:text-medblue-600 transition-colors">آراء المراجعين</a>
+        <a href="#faq" class="hover:text-medblue-600 transition-colors">الأسئلة الشائعة</a>
+      </nav>
+
+      <!-- CTA Buttons -->
+      <div class="flex items-center gap-3">
+        <a href="tel:01224174330" class="hidden sm:flex items-center gap-2 text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 px-3.5 py-2 rounded-xl transition-all border border-slate-200" title="اتصال بالاستعلامات">
+          <i class="fa-solid fa-phone text-medblue-600"></i>
+          <span dir="ltr">01224174330</span>
+        </a>
+        <a href="#booking" class="flex items-center gap-2 bg-medblue-600 hover:bg-medblue-700 active:scale-95 text-white px-5 py-2.5 rounded-xl font-bold text-xs md:text-sm shadow-md shadow-medblue-600/25 transition-all">
+          <i class="fa-regular fa-calendar-check text-base"></i>
+          <span>احجز كشفك الآن</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="about" class="relative z-10 pt-10 pb-16 md:pt-16 md:pb-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Right Column: Content -->
+        <div class="lg:col-span-7 space-y-6 text-right">
+          
+          <!-- Trust Badge Header -->
+          <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-blue-50/80 border border-blue-200 shadow-xs">
+            <span class="flex h-2.5 w-2.5 relative">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+            </span>
+            <span class="text-xs md:text-sm font-bold text-medblue-900">
+              توصية بنسبة 100% من المراجعين • 3 فروع بالقاهرة
+            </span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-5.5xl font-black text-slate-900 leading-[1.25] tracking-tight">
+            بشرة صحية، مشرقة وطبيعية <br class="hidden sm:inline" />
+            مع خبرة واستشارة طبية موثوقة
+          </h1>
+
+          <p class="text-slate-600 text-sm md:text-base lg:text-lg leading-relaxed max-w-2xl">
+            أهلاً بكم في عيادات <strong class="text-medblue-800 font-bold">د. محمد حسين حسن</strong>، استشاري الأمراض الجلدية والتجميل والليزر وجراحات الجلد. نمنحكم تشخيصاً دقيقاً معتمداً على أحدث الدراسات العالمية، لعلاج حب الشباب وآثاره، استعادة نضارة البشرة بتقنيات الـ Skin Booster، وعلاجات الليزر المتطورة.
+          </p>
+
+          <!-- Key Highlights -->
+          <div class="flex flex-wrap gap-2.5 text-xs md:text-sm text-slate-700 font-medium">
+            <div class="flex items-center gap-2 bg-white px-3 py-1.5 rounded-lg border border-slate-200 shadow-xs">
+              <i class="fa-solid fa-circle-check text-emerald-500"></i>
+              <span>خطة علاجية مخصصة لكل حالة</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white px-3 py-1.5 rounded-lg border border-slate-200 shadow-xs">
+              <i class="fa-solid fa-circle-check text-emerald-500"></i>
+              <span>أحدث مواد الفيلر والبوتوكس الأصلية</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white px-3 py-1.5 rounded-lg border border-slate-200 shadow-xs">
+              <i class="fa-solid fa-circle-check text-emerald-500"></i>
+              <span>تحويل مباشر لواتساب الفرع</span>
+            </div>
+          </div>
+
+          <!-- Actions -->
+          <div class="flex flex-wrap gap-3.5 pt-3">
+            <a href="#booking" class="px-7 py-3.5 rounded-xl bg-medblue-600 hover:bg-medblue-700 text-white font-bold text-sm md:text-base shadow-lg shadow-medblue-600/25 transition-all flex items-center gap-2.5">
+              <i class="fa-regular fa-calendar-check text-lg"></i>
+              <span>حجز موعد الكشف بالفرع الأقرب</span>
+            </a>
+            <a href="#branches" class="px-6 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-slate-800 font-bold text-sm md:text-base border border-slate-300 shadow-xs transition-all flex items-center gap-2">
+              <i class="fa-solid fa-location-dot text-medblue-600"></i>
+              <span>مواعيد وفروع العيادات</span>
+            </a>
+          </div>
+
+          <!-- Numbers / Stats strip -->
+          <div class="grid grid-cols-3 gap-3 pt-6 border-t border-slate-200/90">
+            <div class="bg-white p-3.5 rounded-2xl border border-slate-200/80 shadow-soft-card text-center">
+              <span class="block text-2xl md:text-3xl font-black text-medblue-700" id="statBranches">3</span>
+              <span class="text-[11px] md:text-xs font-semibold text-slate-500">فروع تخدم القاهرة</span>
+            </div>
+            <div class="bg-white p-3.5 rounded-2xl border border-slate-200/80 shadow-soft-card text-center">
+              <span class="block text-2xl md:text-3xl font-black text-medblue-700">100%</span>
+              <span class="text-[11px] md:text-xs font-semibold text-slate-500">توصيات إيجابية موثقة</span>
+            </div>
+            <div class="bg-white p-3.5 rounded-2xl border border-slate-200/80 shadow-soft-card text-center">
+              <span class="block text-2xl md:text-3xl font-black text-medblue-700">+15</span>
+              <span class="text-[11px] md:text-xs font-semibold text-slate-500">عاماً من الخبرة الطبية</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Left Column: Doctor Profile Card / Visual -->
+        <div class="lg:col-span-5 relative flex justify-center">
+          <div class="relative w-full max-w-md">
+            
+            <!-- Soft White & Blue Gradient Card Frame -->
+            <div class="relative bg-white rounded-3xl p-6 sm:p-7 border border-blue-100 shadow-elevated">
+              
+              <!-- Doctor Presentation Header -->
+              <div class="flex items-center gap-4 pb-5 border-b border-slate-100">
+                <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-medblue-600 to-sky-500 p-0.5 shadow-md flex-shrink-0">
+                  <div class="w-full h-full bg-blue-50 rounded-[14px] flex items-center justify-center overflow-hidden">
+                    <i class="fa-solid fa-user-doctor text-4xl text-medblue-600"></i>
+                  </div>
+                </div>
+                <div>
+                  <span class="inline-block text-[11px] font-bold text-medblue-700 bg-blue-50 px-2.5 py-0.5 rounded-md mb-1">
+                    استشاري معتمد
+                  </span>
+                  <h3 class="text-lg font-black text-slate-900 leading-tight">
+                    د. محمد حسين حسن
+                  </h3>
+                  <p class="text-xs text-slate-500 font-medium">
+                    Consultant Dermatologist & Venereologist
+                  </p>
+                  <div class="flex items-center gap-1 text-amber-400 text-xs mt-1.5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="text-slate-600 font-bold mr-1 text-[11px]">(49 تقييماً معتمداً)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Specialties summary list -->
+              <div class="py-4 space-y-2.5 text-xs text-slate-700">
+                <div class="flex items-start gap-2.5 p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+                  <div class="w-5 h-5 rounded-md bg-blue-100 text-medblue-700 flex items-center justify-center flex-shrink-0 mt-0.5 text-[11px]">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <div>
+                    <strong class="font-bold text-slate-900">علاج حب الشباب والندبات:</strong>
+                    <span>بروتوكولات متطورة مع Skin Booster واستعادة نضارة البشرة.</span>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-2.5 p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+                  <div class="w-5 h-5 rounded-md bg-blue-100 text-medblue-700 flex items-center justify-center flex-shrink-0 mt-0.5 text-[11px]">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <div>
+                    <strong class="font-bold text-slate-900">إجراءات الحقن التجميلي:</strong>
+                    <span>بوتوكس، فيلر للشفاه والوجنات، ومحفزات الكولاجين الطبيعية.</span>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-2.5 p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+                  <div class="w-5 h-5 rounded-md bg-blue-100 text-medblue-700 flex items-center justify-center flex-shrink-0 mt-0.5 text-[11px]">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <div>
+                    <strong class="font-bold text-slate-900">جراحات الجلد والليزر:</strong>
+                    <span>إزالة الزوائد والشامات، وجلسات الفراكشنال ليزر الدقيقة.</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Direct Click Quick Contact -->
+              <div class="pt-3 border-t border-slate-100">
+                <div class="text-[11px] font-bold text-slate-500 mb-2 flex items-center justify-between">
+                  <span>تواصل فوري مع الفروع عبر واتساب:</span>
+                  <i class="fa-brands fa-whatsapp text-emerald-600 text-sm"></i>
+                </div>
+                <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                  <a href="https://wa.me/201000740799?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%81%D8%B1%D8%B9%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D9%86%D8%B5%D8%B1%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%85%D9%88%D8%A7%D8%B9%D9%8A%D8%AF%20%D8%A7%D9%84%D9%83%D8%B4%D9%81" target="_blank" class="p-2 rounded-xl bg-blue-50 hover:bg-medblue-600 hover:text-white text-medblue-700 font-bold border border-blue-100 transition-all">
+                    مدينة نصر
+                  </a>
+                  <a href="https://wa.me/201550110017?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%AA%D8%AC%D9%85%D8%B9%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%85%D9%88%D8%A7%D8%B9%D9%8A%D8%AF%20%D8%A7%D9%84%D9%83%D8%B4%D9%81" target="_blank" class="p-2 rounded-xl bg-blue-50 hover:bg-medblue-600 hover:text-white text-medblue-700 font-bold border border-blue-100 transition-all">
+                    التجمع الأول
+                  </a>
+                  <a href="https://wa.me/201280093751?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%81%D8%B1%D8%B9%20%D9%88%D8%B3%D8%B7%20%D8%A7%D9%84%D8%A8%D9%84%D8%AF%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%85%D9%88%D8%A7%D8%B9%D9%8A%D8%AF%20%D8%A7%D9%84%D9%83%D8%B4%D9%81" target="_blank" class="p-2 rounded-xl bg-blue-50 hover:bg-medblue-600 hover:text-white text-medblue-700 font-bold border border-blue-100 transition-all">
+                    وسط البلد
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Clinical Services Section -->
+  <section id="services" class="relative z-10 py-16 md:py-24 bg-slate-50/70 border-y border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-black tracking-widest text-medblue-700 uppercase bg-blue-100/70 border border-blue-200 px-3.5 py-1.5 rounded-full">
+          الخدمات العلاجية والتجميلية
+        </span>
+        <h2 class="text-2xl md:text-4xl font-extrabold text-slate-900 mt-3 mb-2">
+          رعاية طبية تخصصية متكاملة
+        </h2>
+        <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+          نعتمد بروتوكولات طبية آمنة ومدروسة تضمن نتائج تدوم طويلاً وتمنحك المظهر الطبيعي المتناسق.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Service 1 -->
+        <div class="bg-white p-7 rounded-2xl border border-slate-200/90 shadow-soft-card hover:shadow-elevated hover:border-medblue-400 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-13 h-13 rounded-2xl bg-blue-50 border border-blue-100 text-medblue-600 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 group-hover:bg-medblue-600 group-hover:text-white transition-all">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">علاج حب الشباب والآثار</h3>
+            <p class="text-xs md:text-sm text-slate-600 leading-relaxed mb-5">
+              تشخيص سبب الحبوب وخطة دوائية تشمل أحدث كبسولات الأيزوتريتينوين، مع بروتوكولات متزامنة لتنعيم الندبات والتصبغات.
+            </p>
+          </div>
+          <button onclick="prefillBookingService('علاج حب الشباب والآثار')" class="inline-flex items-center gap-1.5 text-xs font-bold text-medblue-600 group-hover:text-medblue-800 transition-colors">
+            <span>طلب حجز لهذه الخدمة</span>
+            <i class="fa-solid fa-arrow-left text-[11px]"></i>
+          </button>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-white p-7 rounded-2xl border border-slate-200/90 shadow-soft-card hover:shadow-elevated hover:border-medblue-400 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-13 h-13 rounded-2xl bg-blue-50 border border-blue-100 text-medblue-600 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 group-hover:bg-medblue-600 group-hover:text-white transition-all">
+              <i class="fa-solid fa-droplet"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">السكين بوستر والميزوثيرابي</h3>
+            <p class="text-xs md:text-sm text-slate-600 leading-relaxed mb-5">
+              ترطيب فائق للطبقات العميقة، وتحفيز إنتاج الإيلاستين والكولاجين لإعادة إشراقة البشرة المجهدة والتخلص من البهتان.
+            </p>
+          </div>
+          <button onclick="prefillBookingService('نضارة البشرة وسكين بوستر (Skin Booster)')" class="inline-flex items-center gap-1.5 text-xs font-bold text-medblue-600 group-hover:text-medblue-800 transition-colors">
+            <span>طلب حجز لهذه الخدمة</span>
+            <i class="fa-solid fa-arrow-left text-[11px]"></i>
+          </button>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-white p-7 rounded-2xl border border-slate-200/90 shadow-soft-card hover:shadow-elevated hover:border-medblue-400 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-13 h-13 rounded-2xl bg-blue-50 border border-blue-100 text-medblue-600 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 group-hover:bg-medblue-600 group-hover:text-white transition-all">
+              <i class="fa-solid fa-syringe"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">الفيلر والبوتوكس وخيوط الشد</h3>
+            <p class="text-xs md:text-sm text-slate-600 leading-relaxed mb-5">
+              إخفاء تجاعيد الجبهة والعيون وتجميل وتحديد الشفاه والفكين (Texas) بلمسات فنية متناسقة ومواد أصلية معتمدة.
+            </p>
+          </div>
+          <button onclick="prefillBookingService('حقن فيلر وبوتوكس وتجميل الوجه')" class="inline-flex items-center gap-1.5 text-xs font-bold text-medblue-600 group-hover:text-medblue-800 transition-colors">
+            <span>طلب حجز لهذه الخدمة</span>
+            <i class="fa-solid fa-arrow-left text-[11px]"></i>
+          </button>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="bg-white p-7 rounded-2xl border border-slate-200/90 shadow-soft-card hover:shadow-elevated hover:border-medblue-400 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-13 h-13 rounded-2xl bg-blue-50 border border-blue-100 text-medblue-600 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 group-hover:bg-medblue-600 group-hover:text-white transition-all">
+              <i class="fa-solid fa-bolt-lightning"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">جلسات الليزر المتخصص</h3>
+            <p class="text-xs md:text-sm text-slate-600 leading-relaxed mb-5">
+              فراكشنال ليزر لعلاج المسام الواسعة والندبات، ليزر إزالة التصبغات، وليزر تفتيح وتقشير الطبقات السطحية للبشرة.
+            </p>
+          </div>
+          <button onclick="prefillBookingService('جلسات ليزر وجراحات الجلد')" class="inline-flex items-center gap-1.5 text-xs font-bold text-medblue-600 group-hover:text-medblue-800 transition-colors">
+            <span>طلب حجز لهذه الخدمة</span>
+            <i class="fa-solid fa-arrow-left text-[11px]"></i>
+          </button>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="bg-white p-7 rounded-2xl border border-slate-200/90 shadow-soft-card hover:shadow-elevated hover:border-medblue-400 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-13 h-13 rounded-2xl bg-blue-50 border border-blue-100 text-medblue-600 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 group-hover:bg-medblue-600 group-hover:text-white transition-all">
+              <i class="fa-solid fa-stethoscope"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">علاج أمراض الجلد والذكورة</h3>
+            <p class="text-xs md:text-sm text-slate-600 leading-relaxed mb-5">
+              علاج الإكزيما، الصدفية، البهاق، تساقط الشعر الوراثي والثعلبة، بالإضافة إلى علاج الأمراض التناسلية وتأخر الإنجاب لدى الرجال.
+            </p>
+          </div>
+          <button onclick="prefillBookingService('كشف أمراض جلدية وتناسلية وعقم')" class="inline-flex items-center gap-1.5 text-xs font-bold text-medblue-600 group-hover:text-medblue-800 transition-colors">
+            <span>طلب حجز لهذه الخدمة</span>
+            <i class="fa-solid fa-arrow-left text-[11px]"></i>
+          </button>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="bg-white p-7 rounded-2xl border border-slate-200/90 shadow-soft-card hover:shadow-elevated hover:border-medblue-400 transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="w-13 h-13 rounded-2xl bg-blue-50 border border-blue-100 text-medblue-600 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 group-hover:bg-medblue-600 group-hover:text-white transition-all">
+              <i class="fa-solid fa-scissors"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">جراحات الجلد الصغرى</h3>
+            <p class="text-xs md:text-sm text-slate-600 leading-relaxed mb-5">
+              استئصال الزوائد الجلدية، الأكياس الدهنية، والوحمات والشامات المشبوهة بدقة جراحية تجميلية دون ترك علامات واضحة.
+            </p>
+          </div>
+          <button onclick="prefillBookingService('جراحات الجلد الصغرى والزوائد')" class="inline-flex items-center gap-1.5 text-xs font-bold text-medblue-600 group-hover:text-medblue-800 transition-colors">
+            <span>طلب حجز لهذه الخدمة</span>
+            <i class="fa-solid fa-arrow-left text-[11px]"></i>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Before & After Interactive Slider -->
+  <section id="before-after" class="relative z-10 py-16 md:py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-xl mx-auto mb-12">
+        <span class="text-xs font-black text-medblue-700 bg-blue-50 border border-blue-200 px-3.5 py-1.5 rounded-full">
+          نتائج سريرية موثقة
+        </span>
+        <h2 class="text-2xl md:text-4xl font-extrabold text-slate-900 mt-3 mb-2">
+          مقارنة النتائج الحقيقية (قبل وبعد)
+        </h2>
+        <p class="text-slate-600 text-xs md:text-sm">
+          حرك المقبض بالماوس أو السحب باللمس لمشاهدة تحسن صفاء ونضارة البشرة بعد خطة العلاج المعتمدة.
+        </p>
+      </div>
+
+      <!-- Comparison Card -->
+      <div class="max-w-3xl mx-auto bg-slate-50 p-3 sm:p-5 rounded-3xl border border-slate-200 shadow-soft-card">
+        
+        <div id="cleanComparisonBox" class="before-after-box aspect-[16/10] sm:aspect-[16/9] w-full bg-slate-200 relative select-none shadow-sm">
+          
+          <!-- AFTER Layer (Bottom background) -->
+          <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-sky-100 flex items-center justify-center p-6 text-center">
+            <div class="space-y-3 max-w-sm">
+              <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white text-emerald-500 shadow-md mx-auto flex items-center justify-center text-3xl sm:text-4xl">
+                <i class="fa-regular fa-face-smile"></i>
+              </div>
+              <span class="inline-block px-3 py-1 bg-emerald-50 text-emerald-700 font-bold text-xs rounded-full border border-emerald-200">
+                النتيجة بعد العلاج (After)
+              </span>
+              <h4 class="text-base sm:text-lg font-bold text-slate-800">
+                بشرة صافية، ملساء وأكثر نضارة
+              </h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                تحسن ملموس بنسبة تتجاوز 90% في آثار حب الشباب وندبات الوجه بعد كورس الأيزوتريتينوين وجلسات الـ Skin Booster.
+              </p>
+            </div>
+            <span class="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-sm text-slate-800 border border-slate-200 text-xs font-bold rounded-lg shadow-xs">
+              بعد 3 شهور
+            </span>
+          </div>
+
+          <!-- BEFORE Layer (Clipped Overlay) -->
+          <div id="cleanBeforeLayer" class="absolute inset-y-0 right-0 overflow-hidden bg-gradient-to-br from-amber-50 to-rose-50 flex items-center justify-center p-6 text-center border-l border-white" style="width: 50%;">
+            <div class="absolute inset-0 aspect-[16/10] sm:aspect-[16/9] w-full h-full flex items-center justify-center p-6 text-center">
+              <div class="space-y-3 max-w-sm">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white text-rose-400 shadow-md mx-auto flex items-center justify-center text-3xl sm:text-4xl">
+                  <i class="fa-regular fa-face-frown"></i>
+                </div>
+                <span class="inline-block px-3 py-1 bg-rose-50 text-rose-700 font-bold text-xs rounded-full border border-rose-200">
+                  الحالة قبل العلاج (Before)
+                </span>
+                <h4 class="text-base sm:text-lg font-bold text-slate-800">
+                  حب شباب نشط مع تصبغات وندبات
+                </h4>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  الزيارة الأولى للعيادة: مسام ملتهبة، بثور عميقة، وبهتان شديد في نضارة البشرة.
+                </p>
+              </div>
+            </div>
+            <span class="absolute top-4 right-4 px-3 py-1 bg-white/90 backdrop-blur-sm text-slate-800 border border-slate-200 text-xs font-bold rounded-lg shadow-xs">
+              قبل بدء العلاج
+            </span>
+          </div>
+
+          <!-- Draggable Divider Line -->
+          <div id="cleanSliderHandle" class="slider-divider-line" style="left: 50%;">
+            <div class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-medblue-600 text-white flex items-center justify-center shadow-lg border-2 border-white cursor-pointer hover:scale-110 active:scale-95 transition-transform">
+              <i class="fa-solid fa-arrows-left-right text-xs"></i>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="flex items-center justify-between text-[11px] font-semibold text-slate-500 pt-3 px-2">
+          <span><i class="fa-solid fa-hand-pointer ml-1 text-medblue-600"></i> اسحب المؤشر لاستكشاف الفارق</span>
+          <span class="text-medblue-700 font-bold">الحالات خضعت للإشراف المباشر للدكتور</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Clinic 3 Branches Cards Section -->
+  <section id="branches" class="relative z-10 py-16 md:py-24 bg-slate-50/70 border-t border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-black text-medblue-700 bg-blue-100/70 border border-blue-200 px-3.5 py-1.5 rounded-full">
+          مواقع العيادات بالقاهرة
+        </span>
+        <h2 class="text-2xl md:text-4xl font-extrabold text-slate-900 mt-3 mb-2">
+          فروعنا الثلاثة في خدمتك
+        </h2>
+        <p class="text-slate-600 text-xs md:text-sm">
+          اختر الفرع الأقرب إليك لمعرفة العنوان الدقيق، أوقات الاستشارة، ورقم الواتساب الخاص بالفرع.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        
+        <!-- Branch 1: Nasr City -->
+        <div class="bg-white rounded-3xl p-7 border border-slate-200 shadow-soft-card hover:shadow-elevated transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-lg bg-blue-50 text-medblue-700 font-bold text-xs border border-blue-200">
+                فرع مدينة نصر
+              </span>
+              <span class="text-xs font-semibold text-slate-400">Bright Skin Center</span>
+            </div>
+            
+            <h3 class="text-lg font-bold text-slate-900 mb-2">طريق النصر - شباب المهندسين</h3>
+            <p class="text-xs md:text-sm text-slate-600 leading-relaxed mb-6">
+              ٣ عمارات شباب المهندسين - طريق النصر أمام أمن الدولة، أعلى عصائر المأمون.
+            </p>
+
+            <div class="space-y-3 bg-slate-50 p-4 rounded-2xl border border-slate-200/80 mb-6 text-xs">
+              <div class="flex items-center gap-2.5 text-medblue-800 font-bold">
+                <i class="fa-regular fa-clock text-medblue-600"></i>
+                <span>السبت والأربعاء (من 8 م إلى 12 منتصف الليل)</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-slate-600">
+                <i class="fa-brands fa-whatsapp text-emerald-600 font-bold"></i>
+                <span dir="ltr" class="font-bold text-slate-800">01000740799</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-2.5">
+            <button onclick="selectBranchFromCard('nasr_city')" class="w-full py-2.5 rounded-xl bg-blue-50 hover:bg-medblue-600 text-medblue-700 hover:text-white font-bold text-xs border border-blue-200 transition-all flex items-center justify-center gap-2">
+              <i class="fa-regular fa-calendar-check"></i>
+              <span>تحديد هذا الفرع ونزول للاستمارة</span>
+            </button>
+            <a href="https://wa.me/201000740799?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%83%D8%B4%D9%81%20%D9%81%D8%B1%D8%B9%20%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D9%86%D8%B5%D8%B1" target="_blank" class="w-full py-2.5 rounded-xl bg-emerald-50 hover:bg-emerald-600 text-emerald-700 hover:text-white font-bold text-xs border border-emerald-200 transition-all flex items-center justify-center gap-2">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>محادثة فورية مع واتساب الفرع</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Branch 2: Fifth Settlement / Tagamoa -->
+        <div class="bg-white rounded-3xl p-7 border border-slate-200 shadow-soft-card hover:shadow-elevated transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-lg bg-blue-50 text-medblue-700 font-bold text-xs border border-blue-200">
+                فرع التجمع الأول
+              </span>
+              <span class="text-xs font-semibold text-slate-400">Elkeiy Medical Center</span>
+            </div>
+            
+            <h3 class="text-lg font-bold text-slate-900 mb-2">مركز القيعي - البنفسج 1</h3>
+            <p class="text-xs md:text-sm text-slate-600 leading-relaxed mb-6">
+              البنفسج 1، خلف مول البركة - التجمع الأول، القاهرة الجديدة.
+            </p>
+
+            <div class="space-y-3 bg-slate-50 p-4 rounded-2xl border border-slate-200/80 mb-6 text-xs">
+              <div class="flex items-center gap-2.5 text-medblue-800 font-bold">
+                <i class="fa-regular fa-clock text-medblue-600"></i>
+                <span>الأحد (من 7 م إلى 10 م)</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-slate-600">
+                <i class="fa-brands fa-whatsapp text-emerald-600 font-bold"></i>
+                <span dir="ltr" class="font-bold text-slate-800">01550110017</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-2.5">
+            <button onclick="selectBranchFromCard('tagamoa')" class="w-full py-2.5 rounded-xl bg-blue-50 hover:bg-medblue-600 text-medblue-700 hover:text-white font-bold text-xs border border-blue-200 transition-all flex items-center justify-center gap-2">
+              <i class="fa-regular fa-calendar-check"></i>
+              <span>تحديد هذا الفرع ونزول للاستمارة</span>
+            </button>
+            <a href="https://wa.me/201550110017?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%83%D8%B4%D9%81%20%D9%81%D8%B1%D8%B9%20%D8%A7%D9%84%D8%AA%D8%AC%D9%85%D8%B9" target="_blank" class="w-full py-2.5 rounded-xl bg-emerald-50 hover:bg-emerald-600 text-emerald-700 hover:text-white font-bold text-xs border border-emerald-200 transition-all flex items-center justify-center gap-2">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>محادثة فورية مع واتساب الفرع</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Branch 3: Downtown -->
+        <div class="bg-white rounded-3xl p-7 border border-slate-200 shadow-soft-card hover:shadow-elevated transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-lg bg-blue-50 text-medblue-700 font-bold text-xs border border-blue-200">
+                فرع وسط البلد
+              </span>
+              <span class="text-xs font-semibold text-slate-400">Touch Clinic</span>
+            </div>
+            
+            <h3 class="text-lg font-bold text-slate-900 mb-2">وابور الترجمان - بولاق أبو العلا</h3>
+            <p class="text-xs md:text-sm text-slate-600 leading-relaxed mb-6">
+              ١٢ شارع وابور الترجّمان متفرع من ٢٦ يوليو خلف إدارة الكهرباء - بولاق أبو العلا.
+            </p>
+
+            <div class="space-y-3 bg-slate-50 p-4 rounded-2xl border border-slate-200/80 mb-6 text-xs">
+              <div class="flex items-center gap-2.5 text-medblue-800 font-bold">
+                <i class="fa-regular fa-clock text-medblue-600"></i>
+                <span>الكشف بأسبقية الحجز والتنسيق المسبق</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-slate-600">
+                <i class="fa-brands fa-whatsapp text-emerald-600 font-bold"></i>
+                <span dir="ltr" class="font-bold text-slate-800">01280093751</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-2.5">
+            <button onclick="selectBranchFromCard('downtown')" class="w-full py-2.5 rounded-xl bg-blue-50 hover:bg-medblue-600 text-medblue-700 hover:text-white font-bold text-xs border border-blue-200 transition-all flex items-center justify-center gap-2">
+              <i class="fa-regular fa-calendar-check"></i>
+              <span>تحديد هذا الفرع ونزول للاستمارة</span>
+            </button>
+            <a href="https://wa.me/201280093751?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%83%D8%B4%D9%81%20%D9%81%D8%B1%D8%B9%20%D9%88%D8%B3%D8%B7%20%D8%A7%D9%84%D8%A8%D9%84%D8%AF" target="_blank" class="w-full py-2.5 rounded-xl bg-emerald-50 hover:bg-emerald-600 text-emerald-700 hover:text-white font-bold text-xs border border-emerald-200 transition-all flex items-center justify-center gap-2">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>محادثة فورية مع واتساب الفرع</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Smart Booking Engine Section -->
+  <section id="booking" class="relative z-10 py-16 md:py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-gradient-to-br from-blue-50/70 via-white to-sky-50/50 p-6 sm:p-10 md:p-12 rounded-3xl border border-blue-100 shadow-elevated">
+        
+        <div class="text-center max-w-xl mx-auto mb-10">
+          <span class="text-xs font-black tracking-wider text-medblue-700 uppercase bg-blue-100/80 px-3.5 py-1.5 rounded-full border border-blue-200">
+            حجز كشف إلكتروني مؤكد
+          </span>
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-slate-900 mt-3 mb-2">
+            احجز موعدك بفرعك المفضل
+          </h2>
+          <p class="text-slate-600 text-xs md:text-sm">
+            بمجرد إدخال البيانات، يقوم النظام بتجهيز رسالة حجز رسمية وتوجيهك تلقائياً لرقم واتساب الفرع الذي قمت باختياره.
+          </p>
+        </div>
+
+        <form id="clinicBookingForm" class="space-y-6">
+          
+          <!-- Step 1: Branch Selection Cards -->
+          <div>
+            <label class="block text-xs sm:text-sm font-bold text-slate-900 mb-3">
+              1. اختر الفرع الذي ترغب في الحجز به *
+            </label>
+            <div class="grid sm:grid-cols-3 gap-3" id="branchCardsWrap">
+              
+              <!-- Card: Nasr City -->
+              <div onclick="setBranchSelection('nasr_city')" id="branchTab-nasr_city" class="branch-choice cursor-pointer p-4 rounded-2xl bg-white border-2 border-slate-200 hover:border-medblue-500 transition-all duration-200 text-center shadow-xs">
+                <div class="w-9 h-9 rounded-xl bg-blue-50 text-medblue-600 flex items-center justify-center mx-auto mb-2 text-sm font-bold">
+                  <i class="fa-solid fa-hospital-user"></i>
+                </div>
+                <h4 class="font-extrabold text-slate-900 text-sm">مدينة نصر</h4>
+                <p class="text-[11px] text-slate-500 mt-1">السبت والأربعاء (8 م - 12 م)</p>
+              </div>
+
+              <!-- Card: Tagamoa -->
+              <div onclick="setBranchSelection('tagamoa')" id="branchTab-tagamoa" class="branch-choice cursor-pointer p-4 rounded-2xl bg-white border-2 border-slate-200 hover:border-medblue-500 transition-all duration-200 text-center shadow-xs">
+                <div class="w-9 h-9 rounded-xl bg-blue-50 text-medblue-600 flex items-center justify-center mx-auto mb-2 text-sm font-bold">
+                  <i class="fa-solid fa-hospital-user"></i>
+                </div>
+                <h4 class="font-extrabold text-slate-900 text-sm">التجمع الأول</h4>
+                <p class="text-[11px] text-slate-500 mt-1">الأحد (7 م - 10 م)</p>
+              </div>
+
+              <!-- Card: Downtown -->
+              <div onclick="setBranchSelection('downtown')" id="branchTab-downtown" class="branch-choice cursor-pointer p-4 rounded-2xl bg-white border-2 border-slate-200 hover:border-medblue-500 transition-all duration-200 text-center shadow-xs">
+                <div class="w-9 h-9 rounded-xl bg-blue-50 text-medblue-600 flex items-center justify-center mx-auto mb-2 text-sm font-bold">
+                  <i class="fa-solid fa-hospital-user"></i>
+                </div>
+                <h4 class="font-extrabold text-slate-900 text-sm">وسط البلد</h4>
+                <p class="text-[11px] text-slate-500 mt-1">بأسبقية الحجز المسبق</p>
+              </div>
+
+            </div>
+            <input type="hidden" id="selectedBranchKey" value="nasr_city" required />
+          </div>
+
+          <!-- Step 2: Patient Info -->
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1.5">اسم المراجع ثلاثي *</label>
+              <div class="relative">
+                <i class="fa-regular fa-user absolute right-3.5 top-3.5 text-slate-400 text-sm"></i>
+                <input type="text" id="patientName" required placeholder="مثال: أحمد عبد الله" class="w-full pr-10 pl-4 py-3 rounded-xl bg-white border border-slate-200 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-medblue-600 focus:ring-2 focus:ring-blue-100 transition-all" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1.5">رقم الهاتف أو الواتساب *</label>
+              <div class="relative">
+                <i class="fa-solid fa-mobile-screen-button absolute right-3.5 top-3.5 text-slate-400 text-sm"></i>
+                <input type="tel" id="patientPhone" required placeholder="01xxxxxxxxx" class="w-full pr-10 pl-4 py-3 rounded-xl bg-white border border-slate-200 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-medblue-600 focus:ring-2 focus:ring-blue-100 transition-all" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Service & Preferred Date -->
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1.5">الخدمة أو الإجراء الطبي المطلوب *</label>
+              <select id="patientService" required class="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-medblue-600 focus:ring-2 focus:ring-blue-100 transition-all">
+                <option value="علاج حب الشباب والآثار">علاج حب الشباب والآثار والندبات</option>
+                <option value="نضارة البشرة وسكين بوستر (Skin Booster)">نضارة البشرة وسكين بوستر (Skin Booster)</option>
+                <option value="حقن فيلر وبوتوكس وتجميل الوجه">حقن فيلر وبوتوكس وتجميل الوجه</option>
+                <option value="جلسات ليزر وجراحات الجلد">جلسات ليزر وجراحات الجلد الصغرى</option>
+                <option value="كشف أمراض جلدية وتناسلية وعقم">كشف أمراض جلدية وتناسلية وعقم</option>
+                <option value="استشارة وفحص عام للبشرة">استشارة وفحص عام للبشرة والشعر</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1.5">اليوم أو التاريخ المقترح للزيارة</label>
+              <input type="date" id="patientDate" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-medblue-600 focus:ring-2 focus:ring-blue-100 transition-all" />
+            </div>
+          </div>
+
+          <!-- Step 4: Notes -->
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1.5">ملاحظات أو أسئلة إضافية للطبيب (اختياري)</label>
+            <textarea id="patientNotes" rows="2" placeholder="هل استخدمت علاجات سابقة لحب الشباب أو تعاني من أمراض مزمنة؟" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 text-slate-900 text-xs sm:text-sm focus:outline-none focus:border-medblue-600 focus:ring-2 focus:ring-blue-100 transition-all"></textarea>
+          </div>
+
+          <!-- Live Routing Banner -->
+          <div id="branchRoutingBanner" class="p-3.5 rounded-2xl bg-blue-50 border border-blue-200 text-xs text-medblue-900 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-route text-medblue-600 text-sm"></i>
+              <span id="branchRoutingBannerText">الفرع المختار: <strong>فرع مدينة نصر</strong> (واتساب: 01000740799)</span>
+            </div>
+            <span class="text-emerald-700 font-bold bg-emerald-100/80 px-2 py-0.5 rounded-md text-[10px]">
+              تحويل تلقائي مباشر
+            </span>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="w-full py-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 active:scale-[0.99] text-white font-extrabold text-sm sm:text-base shadow-lg shadow-emerald-600/25 transition-all flex items-center justify-center gap-2.5">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            <span>تأكيد الحجز والإرسال لواتساب الفرع</span>
+          </button>
+
+          <!-- Privacy Trust Note -->
+          <p class="text-center text-[11px] text-slate-500">
+            <i class="fa-solid fa-lock text-slate-400 ml-1"></i> يتم حفظ سرية وخصوصية بياناتكم الطبية بدقة وفق المعايير السريرية.
+          </p>
+
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Testimonials & Reviews -->
+  <section id="reviews" class="relative z-10 py-16 md:py-24 bg-slate-50/70 border-t border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-xl mx-auto mb-14">
+        <span class="text-xs font-black text-medblue-700 bg-blue-100/70 border border-blue-200 px-3.5 py-1.5 rounded-full">
+          آراء وتجارب الحالات
+        </span>
+        <h2 class="text-2xl md:text-4xl font-extrabold text-slate-900 mt-3 mb-2">
+          ثقة مراجعينا هي فخرنا (100%)
+        </h2>
+        <p class="text-slate-600 text-xs md:text-sm">
+          تجارب حقيقية موثقة من مراجعي فروعنا في مدينة نصر، التجمع الأول، ووسط البلد.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        
+        <!-- Review 1 -->
+        <div class="bg-white p-7 rounded-3xl border border-slate-200 shadow-soft-card flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="flex text-amber-400 text-xs gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="text-[11px] font-bold text-medblue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-100">فرع مدينة نصر</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              "أشطر دكتور ربنا يبارك في صحتك. من آثار حب الشباب لبشرة أكثر نضارة وإشراقة زي ما وعدني بالظبط، والكشف كان في منتهى الأمانة بدون طلب تحاليل غير ضرورية."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 mt-4 border-t border-slate-100">
+            <div class="w-9 h-9 rounded-full bg-blue-100 text-medblue-700 flex items-center justify-center font-bold text-xs">
+              س
+            </div>
+            <div>
+              <h5 class="text-xs font-bold text-slate-900">سماح م.</h5>
+              <span class="text-[10px] text-slate-500">حالة علاج حب شباب ونضارة</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-white p-7 rounded-3xl border border-slate-200 shadow-soft-card flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="flex text-amber-400 text-xs gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="text-[11px] font-bold text-medblue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-100">فرع التجمع الأول</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              "تجربة جلسة السكين بوستر في مركز القيعي كانت ممتازة جداً. الدكتور بيشرح كل خطوة بالراحة وبدون أي ألم، والنتيجة ظهرت معايا من أول 10 أيام وبشرتي رجعت منورة."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 mt-4 border-t border-slate-100">
+            <div class="w-9 h-9 rounded-full bg-blue-100 text-medblue-700 flex items-center justify-center font-bold text-xs">
+              ن
+            </div>
+            <div>
+              <h5 class="text-xs font-bold text-slate-900">نورا الـ.</h5>
+              <span class="text-[10px] text-slate-500">جلسات نضارة وبوتوكس</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-white p-7 rounded-3xl border border-slate-200 shadow-soft-card flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="flex text-amber-400 text-xs gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="text-[11px] font-bold text-medblue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-100">فرع وسط البلد</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              "عملت إزالة زوائد جلدية بالليزر في عيادة تاتش بوسط البلد، الإجراء ما أخدش ربع ساعة وما حسيتش بأي وجع ولا ساب أي أثر، قمة الذوق والمهنية."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 mt-4 border-t border-slate-100">
+            <div class="w-9 h-9 rounded-full bg-blue-100 text-medblue-700 flex items-center justify-center font-bold text-xs">
+              م
+            </div>
+            <div>
+              <h5 class="text-xs font-bold text-slate-900">م. طارق خليل</h5>
+              <span class="text-[10px] text-slate-500">جراحة ليزر تجميلية</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="relative z-10 py-16 md:py-20 bg-white border-t border-slate-200/80">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-xl mx-auto mb-12">
+        <span class="text-xs font-black text-medblue-700 bg-blue-50 border border-blue-200 px-3.5 py-1.5 rounded-full">
+          إجابات واضحة
+        </span>
+        <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mt-3 mb-2">
+          الأسئلة الأكثر شيوعاً
+        </h2>
+        <p class="text-slate-500 text-xs sm:text-sm">
+          كل ما تحتاج معرفته قبل زيارتك لأحد فروع العيادة
+        </p>
+      </div>
+
+      <div class="space-y-3">
+        
+        <div class="border border-slate-200 rounded-2xl bg-white overflow-hidden">
+          <button onclick="toggleFaq(1)" class="w-full p-4 sm:p-5 text-right flex items-center justify-between font-bold text-slate-900 text-xs sm:text-sm hover:bg-slate-50 transition-colors">
+            <span>كيف يتم تحديد الفرع المناسب لي وتأكيد موعد الكشف؟</span>
+            <i id="faqIcon-1" class="fa-solid fa-chevron-down text-medblue-600 transition-transform duration-300"></i>
+          </button>
+          <div id="faqContent-1" class="hidden p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-600 border-t border-slate-100 leading-relaxed">
+            يمكنك اختيار الفرع الأقرب إليك من بين فروعنا (مدينة نصر، التجمع الأول، ووسط البلد) من خلال نموذج الحجز بالموقع، وبمجرد إرسال الطلب ستفتح محادثة واتساب الفرع المختار مباشرة لتأكيد التوقيت المناسب لحضرتك.
+          </div>
+        </div>
+
+        <div class="border border-slate-200 rounded-2xl bg-white overflow-hidden">
+          <button onclick="toggleFaq(2)" class="w-full p-4 sm:p-5 text-right flex items-center justify-between font-bold text-slate-900 text-xs sm:text-sm hover:bg-slate-50 transition-colors">
+            <span>كم تستغرق خطة علاج آثار حب الشباب للحصول على نتيجة واضحة؟</span>
+            <i id="faqIcon-2" class="fa-solid fa-chevron-down text-medblue-600 transition-transform duration-300"></i>
+          </button>
+          <div id="faqContent-2" class="hidden p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-600 border-t border-slate-100 leading-relaxed">
+            تختلف المدة حسب عمق ونوع الآثار والندبات، ولكن في المتوسط تبدأ النتائج الملموسة بالظهور بعد مرور 4 إلى 8 أسابيع من الانتظام على بروتوكول العلاج وجلسات النضارة المصاحبة.
+          </div>
+        </div>
+
+        <div class="border border-slate-200 rounded-2xl bg-white overflow-hidden">
+          <button onclick="toggleFaq(3)" class="w-full p-4 sm:p-5 text-right flex items-center justify-between font-bold text-slate-900 text-xs sm:text-sm hover:bg-slate-50 transition-colors">
+            <span>هل حقن الفيلر والبوتوكس يسبب أي مظهر غير طبيعي؟</span>
+            <i id="faqIcon-3" class="fa-solid fa-chevron-down text-medblue-600 transition-transform duration-300"></i>
+          </button>
+          <div id="faqContent-3" class="hidden p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-600 border-t border-slate-100 leading-relaxed">
+            نهائياً؛ فلسفة الدكتور تعتمد على المظهر الطبيعي المتناسق (Natural Look) واستعادة امتلاء وحيوية الملامح دون أي مبالغة، باستخدام أجود المواد المعتمدة من هيئات الدواء العالمية.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="relative z-10 bg-slate-900 text-slate-300 pt-16 pb-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid md:grid-cols-4 gap-8 mb-12">
+        
+        <!-- Col 1: Doctor Bio -->
+        <div class="md:col-span-1 space-y-3">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-medblue-600 text-white flex items-center justify-center font-bold text-base font-en">
+              MH
+            </div>
+            <div>
+              <h4 class="text-white font-bold text-sm">د. محمد حسين حسن</h4>
+              <p class="text-[11px] text-slate-400">استشاري الجلدية والتجميل والليزر</p>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            خبرة طبية متخصصة في علاج الأمراض الجلدية، جراحات الجلد، علاجات العقم والذكورة، وأحدث تقنيات الليزر التجميلي.
+          </p>
+          <div class="flex items-center gap-2.5 pt-2">
+            <a href="https://instagram.com/Mohamedhussein_dr" target="_blank" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-medblue-600 text-slate-300 hover:text-white flex items-center justify-center text-xs transition-colors" title="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://tiktok.com/@Dr.mohamed_hussein" target="_blank" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-medblue-600 text-slate-300 hover:text-white flex items-center justify-center text-xs transition-colors" title="TikTok">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="https://youtube.com/@Mohamedhussein_dr" target="_blank" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-medblue-600 text-slate-300 hover:text-white flex items-center justify-center text-xs transition-colors" title="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Fast Navigation -->
+        <div>
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4">روابط سريعة</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="#about" class="hover:text-medblue-400 transition-colors">عن استشاري العيادة</a></li>
+            <li><a href="#services" class="hover:text-medblue-400 transition-colors">قائمة الخدمات والإجراءات</a></li>
+            <li><a href="#branches" class="hover:text-medblue-400 transition-colors">عناوين الفروع الثلاثة</a></li>
+            <li><a href="#before-after" class="hover:text-medblue-400 transition-colors">نتائج قبل وبعد العلاج</a></li>
+            <li><a href="#booking" class="hover:text-medblue-400 transition-colors">نموذج الحجز المباشر</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Direct Clinic Contacts -->
+        <div>
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4">معلومات الاتصال</h4>
+          <ul class="space-y-2.5 text-xs text-slate-400">
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-phone text-medblue-500"></i>
+              <span dir="ltr">01224174330</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-phone text-medblue-500"></i>
+              <span dir="ltr">0224174330</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-regular fa-envelope text-medblue-500"></i>
+              <span>mohamed.abdrab.elnabdy@gmail.com</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-location-dot text-medblue-500"></i>
+              <span>القاهرة (مدينة نصر، التجمع، وسط البلد)</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Quick Branch Booking -->
+        <div>
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4">أرقام حجز الفروع (واتساب)</h4>
+          <div class="space-y-2 text-xs">
+            <a href="https://wa.me/201000740799" target="_blank" class="flex items-center justify-between p-2 rounded-xl bg-slate-800/80 hover:bg-slate-800 text-slate-300 hover:text-white transition-all">
+              <span>فرع مدينة نصر:</span>
+              <span dir="ltr" class="text-emerald-400 font-bold">01000740799</span>
+            </a>
+            <a href="https://wa.me/201550110017" target="_blank" class="flex items-center justify-between p-2 rounded-xl bg-slate-800/80 hover:bg-slate-800 text-slate-300 hover:text-white transition-all">
+              <span>فرع التجمع الأول:</span>
+              <span dir="ltr" class="text-emerald-400 font-bold">01550110017</span>
+            </a>
+            <a href="https://wa.me/201280093751" target="_blank" class="flex items-center justify-between p-2 rounded-xl bg-slate-800/80 hover:bg-slate-800 text-slate-300 hover:text-white transition-all">
+              <span>فرع وسط البلد:</span>
+              <span dir="ltr" class="text-emerald-400 font-bold">01280093751</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright strip -->
+      <div class="border-t border-slate-800/90 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-3">
+        <p>© 2026 عيادات د. محمد حسين حسن - جميع الحقوق محفوظة.</p>
+        <p class="flex items-center gap-1">
+          <span>تصميم طبي فاخر ومعتمد لخدمة المراجعين</span>
+          <i class="fa-solid fa-heart text-rose-500 text-[10px]"></i>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Quick Button -->
+  <div class="fixed bottom-6 left-6 z-50">
+    <a href="#booking" class="flex items-center gap-2.5 px-4 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full font-bold text-xs shadow-float-btn transition-all duration-300 hover:scale-105 active:scale-95 group">
+      <i class="fa-brands fa-whatsapp text-lg"></i>
+      <span class="hidden sm:inline">حجز موعد عبر واتساب الفرع</span>
+    </a>
+  </div>
+
+  <script>
+    // 1. Data Store for Clinics and WhatsApp targets
+    const branchConfig = {
+      nasr_city: {
+        id: "nasr_city",
+        name: "فرع مدينة نصر",
+        centerName: "Bright Skin Center",
+        address: "٣ عمارات شباب المهندسين - طريق النصر أمام أمن الدولة أعلى عصائر المأمون",
+        timing: "السبت والأربعاء (من 8 م إلى 12 منتصف الليل)",
+        whatsapp: "201000740799",
+        phoneFormatted: "01000740799"
+      },
+      tagamoa: {
+        id: "tagamoa",
+        name: "فرع التجمع الأول",
+        centerName: "مركز القيعي (Elkeiy Medical Center)",
+        address: "البنفسج 1، خلف مول البركة - التجمع الأول",
+        timing: "الأحد (من 7 م إلى 10 م)",
+        whatsapp: "201550110017",
+        phoneFormatted: "01550110017"
+      },
+      downtown: {
+        id: "downtown",
+        name: "فرع وسط البلد",
+        centerName: "Touch Clinic",
+        address: "١٢ شارع وابور الترجّمان متفرع من ٢٦ يوليو خلف إدارة الكهرباء - بولاق أبو العلا",
+        timing: "بأسبقية الحجز والتنسيق المسبق",
+        whatsapp: "201280093751",
+        phoneFormatted: "01280093751"
+      }
+    };
+
+    // 2. Set Branch Selection in Form
+    function setBranchSelection(branchKey) {
+      const branch = branchConfig[branchKey];
+      if (!branch) return;
+
+      document.getElementById('selectedBranchKey').value = branchKey;
+
+      // Update Card Visuals
+      document.querySelectorAll('.branch-choice').forEach(card => {
+        card.classList.remove('border-medblue-600', 'bg-blue-50/70', 'shadow-branch-active');
+        card.classList.add('border-slate-200', 'bg-white');
+      });
+
+      const activeCard = document.getElementById(`branchTab-${branchKey}`);
+      if (activeCard) {
+        activeCard.classList.remove('border-slate-200', 'bg-white');
+        activeCard.classList.add('border-medblue-600', 'bg-blue-50/70', 'shadow-branch-active');
+      }
+
+      // Update Live Routing Banner
+      const bannerText = document.getElementById('branchRoutingBannerText');
+      bannerText.innerHTML = `الفرع المختار: <strong>${branch.name} (${branch.centerName})</strong> • رقم واتساب الفرع: (${branch.phoneFormatted})`;
+    }
+
+    // Scroll and set branch from outside sections
+    function selectBranchFromCard(branchKey) {
+      setBranchSelection(branchKey);
+      const bookingSec = document.getElementById('booking');
+      bookingSec.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Prefill service and scroll
+    function prefillBookingService(serviceName) {
+      const select = document.getElementById('patientService');
+      if (select) {
+        select.value = serviceName;
+      }
+      const bookingSec = document.getElementById('booking');
+      bookingSec.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // 3. Form Submit -> Dynamic WhatsApp Dispatcher
+    document.getElementById('clinicBookingForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const branchKey = document.getElementById('selectedBranchKey').value;
+      const branch = branchConfig[branchKey];
+
+      if (!branch) {
+        alert('يرجى اختيار فرع العيادة المطلوب أولاً.');
+        return;
+      }
+
+      const name = document.getElementById('patientName').value.trim();
+      const phone = document.getElementById('patientPhone').value.trim();
+      const service = document.getElementById('patientService').value;
+      const date = document.getElementById('patientDate').value || 'أقرب موعد متاح بالعيادة';
+      const notes = document.getElementById('patientNotes').value.trim() || 'لا توجد ملاحظات خاصة';
+
+      // Professional Medical Clinic Message Text
+      const textMessage = 
+`🏥 *طلب حجز كشف جديد - عيادات د. محمد حسين حسن* 🏥
+
+📍 *الفرع المختار:* ${branch.name} (${branch.centerName})
+📌 *العنوان:* ${branch.address}
+⏰ *مواعيد الفرع:* ${branch.timing}
+
+👤 *بيانات المراجع الكريم:*
+- *الاسم:* ${name}
+- *رقم الهاتف:* ${phone}
+- *الإجراء المطلوب:* ${service}
+- *الموعد المقترح:* ${date}
+- *ملاحظات إضافية:* ${notes}
+
+يرجى تأكيد الحجز وموافاتي بالتفاصيل. شكراً جزيلاً.`;
+
+      const whatsappUrl = `https://wa.me/${branch.whatsapp}?text=${encodeURIComponent(textMessage)}`;
+
+      // Direct redirection to that branch WhatsApp
+      window.open(whatsappUrl, '_blank');
+    });
+
+    // 4. Before & After Interactive Slider (Clean White Theme)
+    const compBox = document.getElementById('cleanComparisonBox');
+    const beforeLayer = document.getElementById('cleanBeforeLayer');
+    const sliderHandle = document.getElementById('cleanSliderHandle');
+    let isDown = false;
+
+    function moveSlider(clientX) {
+      const rect = compBox.getBoundingClientRect();
+      let x = clientX - rect.left;
+      if (x < 0) x = 0;
+      if (x > rect.width) x = rect.width;
+
+      const percentage = (x / rect.width) * 100;
+      const rightWidth = 100 - percentage;
+
+      beforeLayer.style.width = `${rightWidth}%`;
+      sliderHandle.style.left = `${percentage}%`;
+    }
+
+    // Mouse Events
+    compBox.addEventListener('mousedown', (e) => {
+      isDown = true;
+      moveSlider(e.clientX);
+    });
+
+    window.addEventListener('mouseup', () => {
+      isDown = false;
+    });
+
+    window.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      moveSlider(e.clientX);
+    });
+
+    // Touch Events
+    compBox.addEventListener('touchstart', (e) => {
+      isDown = true;
+      moveSlider(e.touches[0].clientX);
+    });
+
+    window.addEventListener('touchend', () => {
+      isDown = false;
+    });
+
+    window.addEventListener('touchmove', (e) => {
+      if (!isDown) return;
+      moveSlider(e.touches[0].clientX);
+    });
+
+    // 5. Accordion FAQ Toggle Logic
+    function toggleFaq(index) {
+      const content = document.getElementById(`faqContent-${index}`);
+      const icon = document.getElementById(`faqIcon-${index}`);
+
+      if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      } else {
+        content.classList.add('hidden');
+        icon.classList.remove('rotate-180');
+      }
+    }
+
+    // Initialize Default State on Load
+    window.addEventListener('DOMContentLoaded', () => {
+      setBranchSelection('nasr_city');
+    });
+  </script>
+</body>
+</html>
